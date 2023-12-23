@@ -46,7 +46,7 @@ class PaymentMethodWidgets extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 16,
+                  width: 10,
                 ),
                 Text(
                   '. . . .  . . . .  . . . .  1235',
@@ -67,35 +67,10 @@ class PaymentMethodWidgets extends StatelessWidget {
             ),
             const Divider(),
             const SizedBox(
-              height: 20,
-            ),
-            Text(
-              'Promo Code',
-            ),
-            const SizedBox(
-              height: 8,
-            ),
-            Container(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 10,
-              ),
-              decoration: BoxDecoration(
-                border: Border.all(color: grey),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: TextField(
-                autocorrect: false,
-                decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: 'Enter Your Promo Code',
-                    hintStyle: regular.copyWith(
-                      fontSize: 12,
-                      color: grey,
-                    )),
-              ),
-            ),
-            const SizedBox(
               height: 10,
+            ),
+            const SizedBox(
+              height: 3,
             ),
             Text(
               'Payment Summary',
@@ -153,7 +128,7 @@ class PaymentMethodWidgets extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 30,
+              height: 20,
             ),
             GestureDetector(
               onTap: () {
