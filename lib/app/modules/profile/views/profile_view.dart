@@ -168,7 +168,7 @@ class ProfileView extends GetView<ProfileController> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Last Transaction',
+            '',
             style: semibold.copyWith(fontSize: 18),
           ),
           SizedBox(height: 10),

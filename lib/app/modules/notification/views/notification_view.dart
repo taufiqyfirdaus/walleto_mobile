@@ -37,17 +37,13 @@ class NotificationView extends GetView<NotificationController> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Balance',
-            style: medium.copyWith(color: grey, fontSize: 16),
-          ),
-          Text(
-            'Rp 570.000',
+            'Notifications',
             style: semibold.copyWith(fontSize: 30),
           ),
           const SizedBox(height: 30),
           _buildMonthList(),
-          const SizedBox(height: 30),
-          _buildMonthlyExpense(),
+          // const SizedBox(height: 30),
+          // _buildMonthlyExpense(),
         ],
       ),
     );
@@ -90,56 +86,56 @@ class NotificationView extends GetView<NotificationController> {
     );
   }
 
-  Widget _buildMonthlyExpense() {
-    return Container(
-      height: 105,
-      padding: const EdgeInsets.fromLTRB(30, 20, 30, 20),
-      decoration: BoxDecoration(
-        image: const DecorationImage(
-          image: AssetImage('assets/images/mask_circle.png'),
-          fit: BoxFit.cover,
-        ),
-        color: lighRed,
-        borderRadius: BorderRadius.circular(18),
-      ),
-      child: Row(
-        children: [
-          Container(
-            height: 50,
-            width: 50,
-            padding: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.3),
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/icons/ic_splash.png'),
-                  scale: 2,
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(width: 20),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Monthly Expense',
-                style: regular.copyWith(color: Colors.white, fontSize: 14),
-              ),
-              Text(
-                '-RP 25.230.000',
-                style: semibold.copyWith(fontSize: 17, color: Colors.white),
-              )
-            ],
-          )
-        ],
-      ),
-    );
-  }
+  // Widget _buildMonthlyExpense() {
+  //   return Container(
+  //     height: 105,
+  //     padding: const EdgeInsets.fromLTRB(30, 20, 30, 20),
+  //     decoration: BoxDecoration(
+  //       image: const DecorationImage(
+  //         image: AssetImage('assets/images/mask_circle.png'),
+  //         fit: BoxFit.cover,
+  //       ),
+  //       color: lighRed,
+  //       borderRadius: BorderRadius.circular(18),
+  //     ),
+  //     child: Row(
+  //       children: [
+  //         Container(
+  //           height: 50,
+  //           width: 50,
+  //           padding: const EdgeInsets.all(10),
+  //           decoration: BoxDecoration(
+  //             color: Colors.white.withOpacity(0.3),
+  //             borderRadius: BorderRadius.circular(10),
+  //           ),
+  //           child: Container(
+  //             decoration: const BoxDecoration(
+  //               image: DecorationImage(
+  //                 image: AssetImage('assets/icons/ic_splash.png'),
+  //                 scale: 2,
+  //               ),
+  //             ),
+  //           ),
+  //         ),
+  //         const SizedBox(width: 20),
+  //         Column(
+  //           mainAxisAlignment: MainAxisAlignment.center,
+  //           crossAxisAlignment: CrossAxisAlignment.start,
+  //           children: [
+  //             Text(
+  //               'Monthly Expense',
+  //               style: regular.copyWith(color: Colors.white, fontSize: 14),
+  //             ),
+  //             Text(
+  //               '-RP 25.230.000',
+  //               style: semibold.copyWith(fontSize: 17, color: Colors.white),
+  //             )
+  //           ],
+  //         )
+  //       ],
+  //     ),
+  //   );
+  // }
 
   Widget _buildExpenseSection() {
     return Container(
@@ -149,21 +145,35 @@ class NotificationView extends GetView<NotificationController> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Last Transaction',
+            'Transaction',
             style: semibold.copyWith(fontSize: 18),
           ),
           const SizedBox(height: 10),
           _buildTransactionItem(
-            'Top Up',
-            '+Rp 700.000',
-            '09.00 Am',
+            'Top Up berhasil dilakukan',
+            '',
+            '',
             color: purple,
           ),
           const SizedBox(height: 10),
           _buildTransactionItem(
-            'BPJS',
-            '-Rp 500.000',
-            '11.00 Am',
+            'Investasi di bank BCA berhasil dilakukan',
+            '',
+            '',
+            color: subtleRed,
+          ),
+          const SizedBox(height: 10),
+          _buildTransactionItem(
+            'Pembayaran kepada PLN telah diterima',
+            '',
+            '',
+            color: subtleRed,
+          ),
+          const SizedBox(height: 10),
+          _buildTransactionItem(
+            'Pembayaran air telah diterima',
+            '',
+            '',
             color: subtleRed,
           ),
         ],
@@ -243,7 +253,7 @@ class NotificationView extends GetView<NotificationController> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Transaction History',
+            '',
             style: semibold.copyWith(
               fontSize: 18,
             ),
