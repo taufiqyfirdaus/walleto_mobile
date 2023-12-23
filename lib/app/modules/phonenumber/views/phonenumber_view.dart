@@ -29,25 +29,25 @@ class PhonenumberView extends GetView<PhonenumberController> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Enter Your\nmobile number',
+                    'Enter Your mobile number',
                     style: semibold.copyWith(
                       fontSize: 18,
                     ),
                   ),
-                  Text(
-                    'Insert your phone number to continue',
-                    style: regular.copyWith(
-                      fontSize: 12,
-                      color: grey,
-                    ),
-                  ),
+                  // Text(
+                  //   'Insert your phone number to continue',
+                  //   style: regular.copyWith(
+                  //     fontSize: 12,
+                  //     color: grey,
+                  //   ),
+                  // ),
                   const SizedBox(
-                    height: 24,
+                    height: 10,
                   ),
                   Row(
                     children: [
                       Container(
-                        width: Get.width * 0.2,
+                        width: Get.width * 0.24,
                         child: const DropDownTextField(
                           dropDownItemCount: 5,
                           searchShowCursor: false,
@@ -66,7 +66,7 @@ class PhonenumberView extends GetView<PhonenumberController> {
                         width: 18,
                       ),
                       Container(
-                        width: Get.width * 0.60,
+                        width: Get.width * 0.5,
                         padding: const EdgeInsets.symmetric(vertical: 11),
                         decoration: const BoxDecoration(
                           border: Border(
@@ -104,13 +104,13 @@ class PhonenumberView extends GetView<PhonenumberController> {
                     ),
                   ),
                   const SizedBox(
-                    height: 39,
+                    height: 20,
                   ),
                   Container(
-                    height: Get.height * 0.40,
+                    height: Get.height * 0.57,
                     decoration: BoxDecoration(
                       color: background,
-                      borderRadius: BorderRadius.circular(25),
+                      borderRadius: BorderRadius.circular(10),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 30),
