@@ -130,7 +130,7 @@ class ProfileView extends GetView<ProfileController> {
           _buildInfoItem('Nama', 'Felicia'),
           _buildInfoItem('Alamat', 'felicia@gmail.com'),
           _buildInfoItem('Jenis Kelamin', 'Perempuan'),
-          _buildInfoItem('No HP', '+1234567890'),
+          _buildInfoItem('No HP', '+6234567890'),
           // Add other personal information items as needed
         ],
       ),
