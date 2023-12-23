@@ -191,7 +191,7 @@ class BalanceView extends GetView<BalanceController> {
                             Text(
                               '-RP 25.230.000',
                               style: semibold.copyWith(
-                                fontSize: 22,
+                                fontSize: 17,
                                 color: Colors.white,
                               ),
                             )
