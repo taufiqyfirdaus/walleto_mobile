@@ -74,7 +74,7 @@ class SignupView extends GetView<SignupController> {
                     children: [
                       Container(
                         height: 40,
-                        width: Get.width * 0.4,
+                        width: Get.width * 0.38,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           border: Border.all(color: lineStroke),
@@ -97,7 +97,7 @@ class SignupView extends GetView<SignupController> {
                       ),
                       Container(
                         height: 40,
-                        width: Get.width * 0.4,
+                        width: Get.width * 0.38,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           border: Border.all(
